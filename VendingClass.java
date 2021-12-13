@@ -1,6 +1,6 @@
-// * Terrick Wright
+// * Terry
 //* VendingClass
-//* November 19, 2021
+//* 
 
 
 
@@ -18,10 +18,10 @@ public class VendingClass {
           static String Menu = "*****************************"
                                  + "\n*   Java Vending Machine    *"
                                  + "\n*****************************"
-                                 + "\n(1): Breath Mints -- 45¢"
-                                 + "\n(2): Potato Chips -- 75¢"
-                                 + "\n(3): Hershey Bar -- 80¢"
-                                 + "\n(4): Pop Tarts -- 95¢"
+                                 + "\n(1): Breath Mints -- 45Â¢"
+                                 + "\n(2): Potato Chips -- 75Â¢"
+                                 + "\n(3): Hershey Bar -- 80Â¢"
+                                 + "\n(4): Pop Tarts -- 95Â¢"
                                  +"\nPlease make your selection (1, 2, 3, 4 or type 5 to EXIT): ";  
                                  
                                                               
