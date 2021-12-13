@@ -1,20 +1,23 @@
-// * Terry
+// * Terrick Wright
 //* VendingClass
-//* 
+//* November 19, 2021
 
 
+import java.util.Scanner;
 
 public class VendingClass {
-            
-             static char Food;
-             static int moneyEntered;
+               int[]Cost = {45,75,80,95};
+               int Food;
+               int moneyEntered;
+               int selected;
+              
              
-             
-             
+                      
+   
             public VendingClass()
             {
             }
-                                    
+             Scanner keyboard =  new Scanner(System.in);                      
           static String Menu = "*****************************"
                                  + "\n*   Java Vending Machine    *"
                                  + "\n*****************************"
@@ -27,27 +30,36 @@ public class VendingClass {
                                                               
                                  
          public static void Foodselection(){ //error checking method? But when I input for example '17a' it will display "Please enter the money for item 1 "
-                         
+                                    int Food = keyboard.nextInt();
                                     switch(Food){                          
-                                    case '1':
+                                    case 1:
                                     System.out.print("Please enter the money for item 1 : ");
                                     break;
-                                    case '2':
+                                    case 2:
                                     System.out.print("Please enter the money for item  2 : ");
                                     break;
-                                    case '3':
+                                    case 3:
                                     System.out.print("Please enter the money for item 3 : ");
                                     break;
-                                    case '4':
+                                    case 4:
                                     System.out.print("Please enter the money for item 4 : ");
                                     break; 
-                                    case '5':
+                                    case 5:
                                     System.out.print("Thanks for your patronage! Have a Nice Day");       
                                     break;
                                     default:
                                     System.out.print("That is not a valid choice--please select again...");
+                                    
                                   }
                                   }
+                                  
+        public static void addedChange(){
+        selected = Cost[Food - 1]; 
+       moneyEntered = keyboard.nextInt(); 
+       System.out.print("You have submitted " + moneyEntered  + " cents for item " + Food);
+       System.out.print("\nYou must submit " + (selected - moneyEntered) + " cents more ");
+       System.out.print("\nPlease enter addtional change for your item: "); 
+       }
                                   
              
                                    
